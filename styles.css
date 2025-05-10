@@ -229,24 +229,59 @@ header img{
 
 
 /*Responsive Seccion Inicio*/
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 768px) {
     .inicio {
       flex-direction: column;
-      padding: 60px 30px;
+      padding: 40px 20px;
       text-align: center;
+      height: auto;
     }
   
-    .btn-box {
-      justify-content: center;
-      gap: 15px;
+    .inicio-container {
+      max-width: 100%;
     }
   
     .inicio-container h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   
     .inicio-container h3 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+    }
+  
+    .inicio-container p {
+      font-size: 15px;
+    }
+  
+    .btn-box {
+      flex-direction: row; /* botones lado a lado */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .btn-box a {
+      width: 45%; /* adaptable en pantallas pequeñas */
+      min-width: 130px;
+      height: 45px;
+      font-size: 16px;
+    }
+  
+    .inicio-social {
+      position: static; /* que ya no sea absolute */
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+      width: 100%;
+    }
+  
+    .inicio-social a {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
     }
   }
   
+
